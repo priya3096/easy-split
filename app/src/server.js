@@ -12,8 +12,7 @@ app.get('/register', function (req, res) {
 app.get('/home', function (req, res) {
     res.send("Welcome to home page! You may enter the required details..");
 });
-
-
+app.use(express.static('html'));
 app.listen(8080, function () {
   console.log('Example app listening on port 8080!');
 });
