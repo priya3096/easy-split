@@ -10,7 +10,7 @@ app.get('/register', function (req, res) {
     res.sendFile('html/register.html',{root});
 });
 app.get('/home', function (req, res) {
-    res.send("Welcome to home page! You may enter the required details..");
+    res.sendFile('html/home.html',{root});
 });
 app.use(express.static('html'));
 app.listen(8080, function () {
