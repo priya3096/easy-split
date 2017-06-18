@@ -12,6 +12,9 @@ app.get('/register', function (req, res) {
 app.get('/home', function (req, res) {
     res.sendFile('html/home.html',{root});
 });
+app.get('/output', function (req, res) {
+    res.sendFile('html/output.html',{root});
+});
 app.use(express.static('html'));
 app.listen(8080, function () {
   console.log('Example app listening on port 8080!');
