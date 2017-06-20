@@ -3,6 +3,9 @@ var app = express();
 
 //your routes here
 var root = process.cwd();
+app.get('/', function (req, res) {
+    res.sendFile('html/about.html',{root});
+});
 app.get('/login', function (req, res) {
     res.sendFile('html/login.html',{root});
 });
